@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEH-KO | Каталог</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="site-logo"><a href="index.html">TEH-KO</a></h1>
+        <nav class="site-nav" aria-label="Основна навигация">
+          <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a class="active" href="katalog.html">Каталог</a></li>
+            <li><a href="promotion.html">Промоции</a></li>
+            <li><a href="sales.html">Продажби</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="author.html">Автор</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="page-section catalog-hero" aria-labelledby="catalog-title">
+          <h2 id="catalog-title">Каталог с авто консумативи и аксесоари</h2>
+          <p>
+            Разгледайте наличните продукти на TEH-KO и изберете категория чрез
+            филтъра по-долу.
+          </p>
+        </section>
+
+        <section class="page-section catalog-filter" aria-label="Филтър на продуктите">
+          <div class="filter-controls" role="group" aria-label="Категории">
+            <button class="filter-btn is-active" type="button" data-filter="all">Всички</button>
+            <button class="filter-btn" type="button" data-filter="brakes">Спирачна система</button>
+            <button class="filter-btn" type="button" data-filter="oils">Филтри и масла</button>
+            <button class="filter-btn" type="button" data-filter="accessories">Аксесоари и консумативи</button>
+          </div>
+        </section>
+
+        <section class="page-section" aria-label="Продукти">
+          <div class="product-grid">
+            <article class="product-card" data-category="brakes">
+              <h3>TK-101 Накладки за спирачки</h3>
+              <p>Комплект предни накладки с нисък шум и висока издръжливост.</p>
+              <p class="product-price">79.00 лв.</p>
+              <a class="btn-primary" href="plashtane.html">Поръчай</a>
+            </article>
+
+            <article class="product-card" data-category="brakes">
+              <h3>TK-102 Спирачни дискове</h3>
+              <p>Вентилирани дискове за по-добро охлаждане и стабилно спиране.</p>
+              <p class="product-price">149.00 лв.</p>
+              <a class="btn-primary" href="plashtane.html">Поръчай</a>
+            </article>
+
+            <article class="product-card" data-category="oils">
+              <h3>TK-201 Маслен филтър</h3>
+              <p>Надеждна филтрация и защита на двигателя при ежедневна употреба.</p>
+              <p class="product-price">19.00 лв.</p>
+              <a class="btn-primary" href="plashtane.html">Поръчай</a>
+            </article>
+
+            <article class="product-card" data-category="oils">
+              <h3>TK-202 Моторно масло 5W-30</h3>
+              <p>Синтетично масло за оптимална работа и удължен живот на мотора.</p>
+              <p class="product-price">64.00 лв.</p>
+              <a class="btn-primary" href="plashtane.html">Поръчай</a>
+            </article>
+
+            <article class="product-card" data-category="accessories">
+              <h3>TK-301 Комплект чистачки</h3>
+              <p>Безшумни пера с равномерно почистване за отлична видимост.</p>
+              <p class="product-price">32.00 лв.</p>
+              <a class="btn-primary" href="plashtane.html">Поръчай</a>
+            </article>
+
+            <article class="product-card" data-category="accessories">
+              <h3>TK-302 Универсални стелки</h3>
+              <p>Гумени стелки с високи бордове за защита на интериора.</p>
+              <p class="product-price">45.00 лв.</p>
+              <a class="btn-primary" href="plashtane.html">Поръчай</a>
+            </article>
+
+            <article class="product-card" data-category="accessories">
+              <h3>TK-303 Добавка за гориво</h3>
+              <p>Подобрява горивния процес и подпомага чистотата на системата.</p>
+              <p class="product-price">16.00 лв.</p>
+              <a class="btn-primary" href="plashtane.html">Поръчай</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span class="current-year"></span> TEH-KO. Училищен дипломен проект.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/katalog-filter.js"></script>
+  </body>
+</html>
