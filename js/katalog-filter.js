@@ -1,17 +1,18 @@
 const filterButtons = document.querySelectorAll('.filter-btn');
-const productCards = document.querySelectorAll('.catalog-grid .product-card');
+const productCards = document.querySelectorAll('.product-card');
 
-if (filterButtons.length && productCards.length) {
+if (filterButtons.length > 0 && productCards.length > 0) {
   const applyFilter = (selectedFilter) => {
     productCards.forEach((card) => {
-      const shouldShow = selectedFilter === 'all' || card.dataset.category === selectedFilter;
-      card.classList.toggle('is-hidden', !shouldShow);
+      const cardCategory = (card.dataset.category || '').trim().toLowerCase();
+      const showCard = selectedFilter === 'all' || cardCategory === selectedFilter;
+      card.classList.toggle('is-hidden', !showCard);
     });
   };
 
   filterButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      const selectedFilter = button.dataset.filter;
+      const selectedFilter = (button.dataset.filter || 'all').trim().toLowerCase();
 
       filterButtons.forEach((btn) => {
         btn.classList.toggle('is-active', btn === button);
@@ -21,13 +22,15 @@ if (filterButtons.length && productCards.length) {
     });
   });
 
-  const defaultActiveButton = document.querySelector('.filter-btn.is-active') || filterButtons[0];
+  const defaultActiveButton =
+    document.querySelector('.filter-btn[data-filter="all"]') ||
+    document.querySelector('.filter-btn.is-active') ||
+    filterButtons[0];
 
-  if (defaultActiveButton) {
-    filterButtons.forEach((btn) => {
-      btn.classList.toggle('is-active', btn === defaultActiveButton);
-    });
+  filterButtons.forEach((btn) => {
+    btn.classList.toggle('is-active', btn === defaultActiveButton);
+  });
 
-    applyFilter(defaultActiveButton.dataset.filter);
-  }
+  const defaultFilter = (defaultActiveButton.dataset.filter || 'all').trim().toLowerCase();
+  applyFilter(defaultFilter);
 }
