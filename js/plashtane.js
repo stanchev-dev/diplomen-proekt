@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = {
         'TK-101': {
-            name: 'Спирачни накладки Premium',
+            name: 'Спирачни накладки висок клас',
             price: 89.90,
             priceText: '89.90 лв.',
             image: 'images/brake-pads.jpg',
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Практично решение за подмяна на основни елементи от спирачната система.'
         },
         'TK-201': {
-            name: 'Маслен филтър Standard',
+            name: 'Маслен филтър стандартен клас',
             price: 18.50,
             priceText: '18.50 лв.',
             image: 'images/oil-filter.jpg',
