@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продажби | ТЕХ-КО</title>
+    <meta name="description" content="Информация за продажбите на ТЕХ-КО за определен период с графично представяне на данните.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content">Пропусни към основното съдържание</a>
+
+    <header class="site-header">
+        <div class="container header-wrap">
+            <a href="index.html" class="logo-box" aria-label="Начало - ТЕХ-КО">
+                <img src="images/logo-tehko.svg" alt="Лого на ТЕХ-КО" class="logo">
+                <div class="logo-text">
+                    <span class="logo-title">ТЕХ-КО</span>
+                    <span class="logo-subtitle">Магазин за авточасти</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" aria-label="Основна навигация">
+                <ul class="nav-list">
+                    <li><a href="index.html">Начало</a></li>
+
+                    <li class="dropdown">
+                        <a href="katalog.html" aria-haspopup="true">Каталог</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="katalog.html">Всички артикули</a></li>
+                            <li><a href="promocia.html">Промоция</a></li>
+                            <li><a class="active" href="prodazhbi.html">Продажби</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="kontakti.html">Контакти</a></li>
+                    <li><a href="avtor.html">Автор</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-box">
+                    <h1>Продажби</h1>
+                    <p>
+                        На тази страница е представена информация за продажбите на фирмата
+                        за 2025 година с графично представяне на месечните данни.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sales-section">
+            <div class="container">
+                <div class="sales-layout">
+
+                    <article class="sales-info-card">
+                        <span class="section-badge">Отчетен период</span>
+                        <h2>Продажби за 2025 година</h2>
+                        <p>
+                            Графиката показва броя реализирани продажби по месеци.
+                            Данните са примерни и служат за визуално представяне
+                            на активността на фирмата през годината.
+                        </p>
+
+                        <div class="sales-stats-grid">
+                            <div class="sales-stat-box">
+                                <h3>Най-силен месец</h3>
+                                <p>Юли</p>
+                            </div>
+
+                            <div class="sales-stat-box">
+                                <h3>Най-слаб месец</h3>
+                                <p>Януари</p>
+                            </div>
+
+                            <div class="sales-stat-box">
+                                <h3>Общо продажби</h3>
+                                <p>1 830</p>
+                            </div>
+
+                            <div class="sales-stat-box">
+                                <h3>Средно на месец</h3>
+                                <p>153</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="sales-chart-card">
+                        <h2>Графично представяне</h2>
+                        <canvas id="salesChart" width="900" height="450" aria-label="Графика на продажбите за 2025 година"></canvas>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <div>
+                <h2 class="footer-brand">ТЕХ-КО</h2>
+                <p>Фирмен сайт на магазин за авточасти.</p>
+            </div>
+
+            <div>
+                <p><strong>Телефон:</strong> +359 888 123 456</p>
+                <p><strong>Имейл:</strong> info@tehko.bg</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/prodazhbi.js"></script>
+</body>
+</html>

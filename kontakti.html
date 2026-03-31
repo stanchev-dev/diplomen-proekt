@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | ТЕХ-КО</title>
+    <meta name="description" content="Свържете се с ТЕХ-КО чрез формата за обратна връзка или чрез посочените контакти.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content">Пропусни към основното съдържание</a>
+
+    <header class="site-header">
+        <div class="container header-wrap">
+            <a href="index.html" class="logo-box" aria-label="Начало - ТЕХ-КО">
+                <img src="images/logo-tehko.svg" alt="Лого на ТЕХ-КО" class="logo">
+                <div class="logo-text">
+                    <span class="logo-title">ТЕХ-КО</span>
+                    <span class="logo-subtitle">Магазин за авточасти</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" aria-label="Основна навигация">
+                <ul class="nav-list">
+                    <li><a href="index.html">Начало</a></li>
+
+                    <li class="dropdown">
+                        <a href="katalog.html" aria-haspopup="true">Каталог</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="katalog.html">Всички артикули</a></li>
+                            <li><a href="promocia.html">Промоция</a></li>
+                            <li><a href="prodazhbi.html">Продажби</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="active" href="kontakti.html">Контакти</a></li>
+                    <li><a href="avtor.html">Автор</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-box">
+                    <h1>Контакти</h1>
+                    <p>
+                        Имате въпрос относно наличност, поръчка или избор на авточаст?
+                        Свържете се с екипа на ТЕХ-КО чрез формата за обратна връзка или
+                        използвайте посочените координати.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts-section">
+            <div class="container">
+                <div class="contacts-layout">
+
+                    <article class="contacts-info-card">
+                        <span class="section-badge">Информация за връзка</span>
+                        <h2>Как можете да се свържете с нас</h2>
+                        <p class="contacts-intro">
+                            Нашият екип е на разположение за консултация при избор на
+                            авточасти, въпроси за доставка и съдействие при поръчка.
+                        </p>
+
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <h3>Телефон</h3>
+                                    <p>+359 888 123 456</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">✉</div>
+                                <div>
+                                    <h3>Имейл</h3>
+                                    <p>info@tehko.bg</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h3>Адрес</h3>
+                                    <p>гр. Пловдив, бул. „България“ 25</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">🕒</div>
+                                <div>
+                                    <h3>Работно време</h3>
+                                    <p>Понеделник – Петък: 09:00 – 18:00 ч.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="contact-form-card">
+                        <span class="section-badge">Форма за обратна връзка</span>
+                        <h2>Изпратете запитване</h2>
+                        <p class="contact-form-intro">
+                            Попълнете формата и ние ще се свържем с Вас възможно най-скоро.
+                        </p>
+
+                        <form id="contact-form" class="contact-form" action="#" method="post">
+                            <div class="contact-form-grid">
+
+                                <div class="form-group">
+                                    <label for="full-name">Име и фамилия</label>
+                                    <input type="text" id="full-name" name="full-name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Телефон</label>
+                                    <input type="tel" id="phone" name="phone" required pattern="[+0-9\s-]{8,}" placeholder="+359 888 123 456">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Имейл</label>
+                                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Тема</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Например: Запитване за наличност">
+                                </div>
+
+                                <div class="form-group form-group-full">
+                                    <label for="message">Съобщение</label>
+                                    <textarea id="message" name="message" rows="6" required placeholder="Напишете Вашето съобщение тук..."></textarea>
+                                </div>
+
+                            </div>
+
+                            <div class="contact-actions">
+                                <button type="submit" class="btn btn-primary">Изпрати съобщение</button>
+                            </div>
+                        </form>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <div>
+                <h2 class="footer-brand">ТЕХ-КО</h2>
+                <p>Фирмен сайт на магазин за авточасти.</p>
+            </div>
+
+            <div>
+                <p><strong>Телефон:</strong> +359 888 123 456</p>
+                <p><strong>Имейл:</strong> info@tehko.bg</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/kontakti.js"></script>
+</body>
+</html>
