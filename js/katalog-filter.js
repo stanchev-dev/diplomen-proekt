@@ -1,18 +1,19 @@
 const filterButtons = document.querySelectorAll('.filter-btn');
-const productCards = document.querySelectorAll('.product-card');
+const categorySections = document.querySelectorAll('.catalog-category');
 
-filterButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const selectedFilter = button.dataset.filter;
+if (filterButtons.length && categorySections.length) {
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const selectedFilter = button.dataset.filter;
 
-    filterButtons.forEach((btn) => btn.classList.remove('is-active'));
-    button.classList.add('is-active');
+      filterButtons.forEach((btn) => {
+        btn.classList.toggle('is-active', btn === button);
+      });
 
-    productCards.forEach((card) => {
-      const cardCategory = card.dataset.category;
-      const showCard = selectedFilter === 'all' || cardCategory === selectedFilter;
-
-      card.classList.toggle('is-hidden', !showCard);
+      categorySections.forEach((section) => {
+        const shouldShow = section.dataset.category === selectedFilter;
+        section.classList.toggle('is-hidden', !shouldShow);
+      });
     });
   });
-});
+}

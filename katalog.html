@@ -28,7 +28,6 @@
                     <li class="dropdown">
                         <a class="active" href="katalog.html" aria-haspopup="true">Каталог</a>
                         <ul class="dropdown-menu">
-                            <li><a href="katalog.html">Всички артикули</a></li>
                             <li><a href="promocia.html">Промоция</a></li>
                             <li><a href="prodazhbi.html">Продажби</a></li>
                         </ul>
@@ -43,7 +42,7 @@
 
     <main id="main-content">
 
-        <section class="page-hero">
+        <section class="page-hero" id="katalog-top">
             <div class="container">
                 <div class="page-hero-box">
                     <h1>Каталог на ТЕХ-КО</h1>
@@ -57,120 +56,123 @@
 
         <section class="catalog-section">
             <div class="container">
-                <div class="catalog-grid">
+                <nav class="catalog-nav" aria-label="Категории в каталога">
+                    <h2>Категории</h2>
+                    <div class="catalog-filter-controls">
+                        <button type="button" class="filter-btn is-active" data-filter="spirachki">Спирачна система</button>
+                        <button type="button" class="filter-btn" data-filter="konsumativi">Филтри и масла</button>
+                        <button type="button" class="filter-btn" data-filter="elektrika">Електрическа система</button>
+                    </div>
+                </nav>
 
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img src="images/brake-pads.jpg" alt="Спирачни накладки Premium" class="product-image">
-                        </div>
+                <section id="cat-spirachki" class="catalog-category" data-category="spirachki">
+                    <h2 class="catalog-category-title">Спирачна система</h2>
+                    <div class="catalog-grid">
+                        <article class="product-card" data-category="spirachki">
+                            <div class="product-image-wrap">
+                                <img src="images/brake-pads.jpg" alt="Спирачни накладки Premium" class="product-image">
+                            </div>
+                            <div class="product-content">
+                                <p class="product-code"><strong>№ на артикул:</strong> TK-101</p>
+                                <h3>Спирачни накладки Premium</h3>
+                                <p class="product-description">Надеждни спирачни накладки с добра износоустойчивост и стабилно поведение при спиране.</p>
+                                <p class="product-price">Цена: <span>89.90 лв.</span></p>
+                                <a href="plashtane.html?code=TK-101" class="btn btn-primary">Купи</a>
+                            </div>
+                        </article>
 
-                        <div class="product-content">
-                            <p class="product-code"><strong>№ на артикул:</strong> TK-101</p>
-                            <h3>Спирачни накладки Premium</h3>
-                            <p class="product-description">
-                                Надеждни спирачни накладки с добра износоустойчивост и стабилно поведение при спиране.
-                            </p>
-                            <p class="product-price">Цена: <span>89.90 лв.</span></p>
-                            <a href="plashtane.html?code=TK-101" class="btn btn-primary">Купи</a>
-                        </div>
-                    </article>
+                        <article class="product-card" data-category="spirachki">
+                            <div class="product-image-wrap">
+                                <img src="images/promo-banner.jpg" alt="Комплект дискове и накладки" class="product-image">
+                            </div>
+                            <div class="product-content">
+                                <p class="product-code"><strong>№ на артикул:</strong> TK-102</p>
+                                <h3>Комплект дискове и накладки</h3>
+                                <p class="product-description">Практично решение за подмяна на основни елементи от спирачната система.</p>
+                                <p class="product-price">Цена: <span>149.90 лв.</span></p>
+                                <a href="plashtane.html?code=TK-102" class="btn btn-primary">Купи</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
 
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img src="images/promo-banner.jpg" alt="Комплект дискове и накладки" class="product-image">
-                        </div>
+                <section id="cat-konsumativi" class="catalog-category is-hidden" data-category="konsumativi">
+                    <h2 class="catalog-category-title">Филтри и масла</h2>
+                    <div class="catalog-grid">
+                        <article class="product-card" data-category="konsumativi">
+                            <div class="product-image-wrap">
+                                <img src="images/oil-filter.jpg" alt="Маслен филтър Standard" class="product-image">
+                            </div>
+                            <div class="product-content">
+                                <p class="product-code"><strong>№ на артикул:</strong> TK-201</p>
+                                <h3>Маслен филтър Standard</h3>
+                                <p class="product-description">Качествен филтър за надеждна работа на двигателя и ефективна филтрация на маслото.</p>
+                                <p class="product-price">Цена: <span>18.50 лв.</span></p>
+                                <a href="plashtane.html?code=TK-201" class="btn btn-primary">Купи</a>
+                            </div>
+                        </article>
 
-                        <div class="product-content">
-                            <p class="product-code"><strong>№ на артикул:</strong> TK-102</p>
-                            <h3>Комплект дискове и накладки</h3>
-                            <p class="product-description">
-                                Практично решение за подмяна на основни елементи от спирачната система.
-                            </p>
-                            <p class="product-price">Цена: <span>149.90 лв.</span></p>
-                            <a href="plashtane.html?code=TK-102" class="btn btn-primary">Купи</a>
-                        </div>
-                    </article>
+                        <article class="product-card" data-category="konsumativi">
+                            <div class="product-image-wrap">
+                                <img src="images/engine-oil.jpg" alt="Моторно масло 5W-30" class="product-image">
+                            </div>
+                            <div class="product-content">
+                                <p class="product-code"><strong>№ на артикул:</strong> TK-202</p>
+                                <h3>Моторно масло 5W-30</h3>
+                                <p class="product-description">Синтетично моторно масло, подходящо за ежедневна употреба и добра защита на двигателя.</p>
+                                <p class="product-price">Цена: <span>64.90 лв.</span></p>
+                                <a href="plashtane.html?code=TK-202" class="btn btn-primary">Купи</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
 
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img src="images/oil-filter.jpg" alt="Маслен филтър Standard" class="product-image">
-                        </div>
+                <section id="cat-elektrika" class="catalog-category is-hidden" data-category="elektrika">
+                    <h2 class="catalog-category-title">Електрическа система и аксесоари</h2>
+                    <div class="catalog-grid">
+                        <article class="product-card" data-category="elektrika">
+                            <div class="product-image-wrap">
+                                <img src="images/battery.jpg" alt="Акумулатор 12V" class="product-image">
+                            </div>
+                            <div class="product-content">
+                                <p class="product-code"><strong>№ на артикул:</strong> TK-301</p>
+                                <h3>Акумулатор 12V</h3>
+                                <p class="product-description">Надежден акумулатор с добри показатели за работа при различни условия.</p>
+                                <p class="product-price">Цена: <span>189.00 лв.</span></p>
+                                <a href="plashtane.html?code=TK-301" class="btn btn-primary">Купи</a>
+                            </div>
+                        </article>
 
-                        <div class="product-content">
-                            <p class="product-code"><strong>№ на артикул:</strong> TK-201</p>
-                            <h3>Маслен филтър Standard</h3>
-                            <p class="product-description">
-                                Качествен филтър за надеждна работа на двигателя и ефективна филтрация на маслото.
-                            </p>
-                            <p class="product-price">Цена: <span>18.50 лв.</span></p>
-                            <a href="plashtane.html?code=TK-201" class="btn btn-primary">Купи</a>
-                        </div>
-                    </article>
+                        <article class="product-card" data-category="elektrika">
+                            <div class="product-image-wrap">
+                                <img src="images/wipers.jpg" alt="Комплект чистачки" class="product-image">
+                            </div>
+                            <div class="product-content">
+                                <p class="product-code"><strong>№ на артикул:</strong> TK-302</p>
+                                <h3>Комплект чистачки</h3>
+                                <p class="product-description">Практични и устойчиви чистачки за добра видимост при дъжд и лошо време.</p>
+                                <p class="product-price">Цена: <span>29.90 лв.</span></p>
+                                <a href="plashtane.html?code=TK-302" class="btn btn-primary">Купи</a>
+                            </div>
+                        </article>
 
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img src="images/engine-oil.jpg" alt="Моторно масло 5W-30" class="product-image">
-                        </div>
+                        <article class="product-card" data-category="elektrika">
+                            <div class="product-image-wrap">
+                                <img src="images/bulbs.jpg" alt="Комплект автомобилни крушки" class="product-image">
+                            </div>
+                            <div class="product-content">
+                                <p class="product-code"><strong>№ на артикул:</strong> TK-303</p>
+                                <h3>Комплект автомобилни крушки</h3>
+                                <p class="product-description">Подходящ комплект крушки за по-добра видимост и безопасност по време на шофиране.</p>
+                                <p class="product-price">Цена: <span>22.90 лв.</span></p>
+                                <a href="plashtane.html?code=TK-303" class="btn btn-primary">Купи</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
 
-                        <div class="product-content">
-                            <p class="product-code"><strong>№ на артикул:</strong> TK-202</p>
-                            <h3>Моторно масло 5W-30</h3>
-                            <p class="product-description">
-                                Синтетично моторно масло, подходящо за ежедневна употреба и добра защита на двигателя.
-                            </p>
-                            <p class="product-price">Цена: <span>64.90 лв.</span></p>
-                            <a href="plashtane.html?code=TK-202" class="btn btn-primary">Купи</a>
-                        </div>
-                    </article>
-
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img src="images/battery.jpg" alt="Акумулатор 12V" class="product-image">
-                        </div>
-
-                        <div class="product-content">
-                            <p class="product-code"><strong>№ на артикул:</strong> TK-301</p>
-                            <h3>Акумулатор 12V</h3>
-                            <p class="product-description">
-                                Надежден акумулатор с добри показатели за работа при различни условия.
-                            </p>
-                            <p class="product-price">Цена: <span>189.00 лв.</span></p>
-                            <a href="plashtane.html?code=TK-301" class="btn btn-primary">Купи</a>
-                        </div>
-                    </article>
-
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img src="images/wipers.jpg" alt="Комплект чистачки" class="product-image">
-                        </div>
-
-                        <div class="product-content">
-                            <p class="product-code"><strong>№ на артикул:</strong> TK-302</p>
-                            <h3>Комплект чистачки</h3>
-                            <p class="product-description">
-                                Практични и устойчиви чистачки за добра видимост при дъжд и лошо време.
-                            </p>
-                            <p class="product-price">Цена: <span>29.90 лв.</span></p>
-                            <a href="plashtane.html?code=TK-302" class="btn btn-primary">Купи</a>
-                        </div>
-                    </article>
-
-                    <article class="product-card">
-                        <div class="product-image-wrap">
-                            <img src="images/bulbs.jpg" alt="Комплект автомобилни крушки" class="product-image">
-                        </div>
-
-                        <div class="product-content">
-                            <p class="product-code"><strong>№ на артикул:</strong> TK-303</p>
-                            <h3>Комплект автомобилни крушки</h3>
-                            <p class="product-description">
-                                Подходящ комплект крушки за по-добра видимост и безопасност по време на шофиране.
-                            </p>
-                            <p class="product-price">Цена: <span>22.90 лв.</span></p>
-                            <a href="plashtane.html?code=TK-303" class="btn btn-primary">Купи</a>
-                        </div>
-                    </article>
-
+                <div class="catalog-top-link-wrap">
+                    <a href="#katalog-top" class="btn btn-secondary">Върни ме отгоре</a>
                 </div>
             </div>
         </section>
@@ -191,5 +193,6 @@
         </div>
     </footer>
 
+    <script src="js/katalog-filter.js"></script>
 </body>
 </html>
