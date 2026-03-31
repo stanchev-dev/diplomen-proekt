@@ -794,8 +794,31 @@ section {
     color: var(--accent-dark);
 }
 
+.product-buy-form {
+    width: 100%;
+    max-width: 210px;
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+}
+
+.product-qty-label {
+    font-weight: 700;
+}
+
+.product-qty-input {
+    width: 100%;
+    min-height: 42px;
+    padding: 8px 10px;
+    border: 1px solid #bfd0df;
+    border-radius: 10px;
+    text-align: center;
+    background: #ffffff;
+}
+
 .product-card .btn {
     min-width: 120px;
+    width: 100%;
 }
 
 /* =========================
@@ -845,7 +868,8 @@ section {
 }
 
 .checkout-product-code,
-.checkout-product-price {
+.checkout-product-price,
+.checkout-product-stock {
     margin: 0 0 10px;
 }
 
