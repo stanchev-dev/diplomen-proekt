@@ -1,11 +1,11 @@
 const filterButtons = document.querySelectorAll('.filter-btn');
-const categorySections = document.querySelectorAll('.catalog-category');
+const productCards = document.querySelectorAll('.catalog-grid .product-card');
 
-if (filterButtons.length && categorySections.length) {
+if (filterButtons.length && productCards.length) {
   const applyFilter = (selectedFilter) => {
-    categorySections.forEach((section) => {
-      const shouldShow = selectedFilter === 'all' || section.dataset.category === selectedFilter;
-      section.classList.toggle('is-hidden', !shouldShow);
+    productCards.forEach((card) => {
+      const shouldShow = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+      card.classList.toggle('is-hidden', !shouldShow);
     });
   };
 

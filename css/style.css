@@ -698,14 +698,6 @@ section {
     border-color: var(--primary);
 }
 
-.catalog-category {
-    margin-bottom: 24px;
-}
-
-.catalog-category-title {
-    margin: 0 0 14px;
-    font-size: 1.4rem;
-}
 
 .catalog-top-link-wrap {
     margin-top: 10px;
@@ -720,6 +712,7 @@ section {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 24px;
+    align-items: stretch;
 }
 
 .product-card {
