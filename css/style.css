@@ -368,6 +368,7 @@ section {
 .team-intro {
     max-width: 62ch;
     margin: 0 auto;
+    text-align: center;
 }
 
 .team-grid {
