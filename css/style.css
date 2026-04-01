@@ -1453,7 +1453,7 @@ section {
 .sales-simple-image {
     width: 100%;
     height: auto;
-    max-height: 520px;
+    max-height: 450px;
     object-fit: contain;
     border: 1px solid var(--border);
     border-radius: 14px;
