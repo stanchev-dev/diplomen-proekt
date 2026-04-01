@@ -64,13 +64,23 @@ select {
 
 /* Достъпност */
 a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible,
-select:focus-visible {
+button:focus-visible {
     outline: 3px solid var(--accent);
     outline-offset: 3px;
     border-radius: 8px;
+}
+
+/* По-неутрален фокус за полетата във форми */
+input:not([type="checkbox"]):not([type="radio"]):focus,
+textarea:focus,
+select:focus,
+input:not([type="checkbox"]):not([type="radio"]):focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    border-color: #9fb5c8;
+    outline: 2px solid rgba(15, 76, 129, 0.22);
+    outline-offset: 1px;
+    box-shadow: none;
 }
 
 /* Header */
