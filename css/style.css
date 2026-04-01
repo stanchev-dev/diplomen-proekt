@@ -341,39 +341,51 @@ section {
 
 /* Екип */
 .team-section {
-    padding-top: 18px;
+    background: #f5ede1;
+    border-top: 1px solid #eadcc9;
+    border-bottom: 1px solid #eadcc9;
+    padding: 72px 0 78px;
+    margin-top: 22px;
 }
 
 .team-heading {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 38px;
+}
+
+.team-intro {
+    max-width: 62ch;
+    margin: 0 auto;
 }
 
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    gap: 26px;
 }
 
 .team-card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 24px;
+    padding: 30px 24px 28px;
     box-shadow: var(--shadow-soft);
     text-align: center;
 }
 
 .team-avatar {
-    width: 72px;
-    height: 72px;
-    margin: 0 auto 14px;
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 20px;
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
+    background: linear-gradient(180deg, #f7efe5 0%, #efe3d3 100%);
+    border: 1px solid #e3d1bb;
+    box-shadow: inset 0 2px 8px rgba(120, 90, 58, 0.08);
+    font-size: 1.9rem;
     font-weight: 700;
     color: var(--primary-dark);
 }
@@ -679,6 +691,15 @@ section {
 
     .page-hero-box {
         padding: 28px 20px;
+    }
+
+    .team-section {
+        padding: 56px 0 60px;
+    }
+
+    .team-avatar {
+        width: 150px;
+        height: 150px;
     }
 }
 
