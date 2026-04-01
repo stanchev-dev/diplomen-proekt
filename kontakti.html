@@ -42,69 +42,63 @@
 
     <main id="main-content">
 
-        <section class="page-hero">
+        <section class="contacts-page-section">
             <div class="container">
-                <div class="page-hero-box">
-                    <h1>Контакти</h1>
-                </div>
-            </div>
-        </section>
+                <article class="contacts-page-card">
+                    <header class="contacts-page-header">
+                        <h1>Контакти</h1>
+                        <p>Ако имате въпроси, попълнете формата по-долу или ни посетете на място.</p>
+                    </header>
 
-        <section class="contacts-section">
-            <div class="container">
-                <div class="contacts-layout">
-                    <article class="contact-form-card">
-                        <form id="contact-form" class="contact-form" action="#" method="post">
-                            <div class="contact-form-grid">
+                    <div class="contacts-layout">
+                        <div class="contact-form-card">
+                            <form id="contact-form" class="contact-form" action="#" method="post">
+                                <div class="contact-form-grid">
 
-                                <div class="form-group">
-                                    <label for="full-name">Име и фамилия</label>
-                                    <input type="text" id="full-name" name="full-name" required>
+                                    <div class="form-group">
+                                        <label for="full-name">Име и фамилия</label>
+                                        <input type="text" id="full-name" name="full-name" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="phone">Телефон</label>
+                                        <input type="tel" id="phone" name="phone" required pattern="[+0-9\s-]{8,}" placeholder="+359 888 123 456">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Имейл</label>
+                                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="subject">Тема</label>
+                                        <input type="text" id="subject" name="subject" required placeholder="Например: Запитване за наличност">
+                                    </div>
+
+                                    <div class="form-group form-group-full">
+                                        <label for="message">Съобщение</label>
+                                        <textarea id="message" name="message" rows="6" required placeholder="Напишете Вашето съобщение тук..."></textarea>
+                                    </div>
+
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="phone">Телефон</label>
-                                    <input type="tel" id="phone" name="phone" required pattern="[+0-9\s-]{8,}" placeholder="+359 888 123 456">
+                                <div class="contact-actions">
+                                    <button type="submit" class="btn btn-primary">Изпрати съобщение</button>
                                 </div>
+                            </form>
+                        </div>
 
-                                <div class="form-group">
-                                    <label for="email">Имейл</label>
-                                    <input type="email" id="email" name="email" required placeholder="example@email.com">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="subject">Тема</label>
-                                    <input type="text" id="subject" name="subject" required placeholder="Например: Запитване за наличност">
-                                </div>
-
-                                <div class="form-group form-group-full">
-                                    <label for="message">Съобщение</label>
-                                    <textarea id="message" name="message" rows="6" required placeholder="Напишете Вашето съобщение тук..."></textarea>
-                                </div>
-
-                            </div>
-
-                            <div class="contact-actions">
-                                <button type="submit" class="btn btn-primary">Изпрати съобщение</button>
-                            </div>
-                        </form>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-location-section">
-            <div class="container">
-                <div class="contact-map-wrap contact-map-wrap-only">
-                    <iframe
-                        title="Локация на ТЕХ-КО в Пловдив"
-                        src="https://www.google.com/maps?q=Plovdiv%20Asenovgradsko%20shose%2012&output=embed"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        allowfullscreen>
-                    </iframe>
-                </div>
+                        <div class="contact-map-wrap">
+                            <iframe
+                                title="Локация на ТЕХ-КО в Пловдив"
+                                src="https://www.google.com/maps?q=Plovdiv%20Asenovgradsko%20shose%2012&output=embed"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
