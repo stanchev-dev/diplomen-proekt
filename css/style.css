@@ -1103,31 +1103,16 @@ section {
     padding-bottom: 64px;
 }
 
-.contact-location-card {
-    background: linear-gradient(180deg, #ffffff 0%, #f7fafd 100%);
-    border: 1px solid var(--border);
-    border-radius: 26px;
-    padding: 28px;
-    box-shadow: var(--shadow-soft);
-}
-
-.contact-location-card h2 {
-    margin: 0 0 12px;
-    font-size: 1.95rem;
-}
-
-.contact-location-address {
-    margin: 0 0 18px;
-    color: var(--muted);
-    font-weight: 600;
-}
-
 .contact-map-wrap {
     border-radius: 18px;
     overflow: hidden;
     border: 1px solid var(--border);
     box-shadow: var(--shadow-soft);
     background: #ffffff;
+}
+
+.contact-map-wrap-only {
+    border-radius: 26px;
 }
 
 .contact-map-wrap iframe {
