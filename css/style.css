@@ -1403,77 +1403,55 @@ section {
    ПРОДАЖБИ
 ========================= */
 
-.sales-section {
-    padding-top: 24px;
-    padding-bottom: 64px;
+.sales-simple-title {
+    padding: 56px 0 18px;
 }
 
-.sales-layout {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 28px;
-    align-items: start;
+.sales-simple-chart,
+.sales-simple-text {
+    padding: 0 0 24px;
 }
 
-.sales-info-card,
-.sales-chart-card {
-    background: linear-gradient(180deg, #ffffff 0%, #f7fafd 100%);
+.sales-simple-container {
+    max-width: 900px;
+}
+
+.sales-simple-title h1 {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(2rem, 3.4vw, 2.8rem);
+}
+
+.sales-simple-card {
+    background: #ffffff;
     border: 1px solid var(--border);
-    border-radius: 26px;
-    padding: 28px;
+    border-radius: 20px;
+    padding: 24px;
     box-shadow: var(--shadow-soft);
 }
 
-.sales-info-card h2,
-.sales-chart-card h2 {
-    margin: 0 0 14px;
-    font-size: 2rem;
+.sales-simple-card h2 {
+    margin: 0 0 16px;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
-.sales-info-card p {
-    margin: 0 0 20px;
-    color: var(--muted);
-    line-height: 1.75;
-}
-
-.sales-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-}
-
-.sales-stat-box {
-    padding: 18px;
-    background: #eef4fb;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-}
-
-.sales-stat-box h3 {
-    margin: 0 0 8px;
-    font-size: 1rem;
-}
-
-.sales-stat-box p {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--primary-dark);
-}
-
-.sales-chart-card canvas {
+.sales-simple-image {
     width: 100%;
     height: auto;
-    display: block;
-    background: #ffffff;
     border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 10px;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.sales-simple-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
 }
 
 @media (max-width: 980px) {
-    .promo-layout,
-    .sales-layout {
+    .promo-layout {
         grid-template-columns: 1fr;
     }
 }
@@ -1487,8 +1465,12 @@ section {
         width: 100%;
     }
 
-    .sales-stats-grid {
-        grid-template-columns: 1fr;
+    .sales-simple-card {
+        padding: 20px;
+    }
+
+    .sales-simple-card h2 {
+        font-size: 1.5rem;
     }
 }
 
