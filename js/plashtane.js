@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'TK-101': {
             name: 'Спирачни накладки висок клас',
             price: 89.90,
-            priceText: '89.90 лв.',
+            priceText: '89.90 евро',
             image: 'images/brake-pads.jpg',
             description: 'Надеждни спирачни накладки с добра износоустойчивост и стабилно поведение при спиране.',
             stock: 10
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'TK-102': {
             name: 'Комплект дискове и накладки',
             price: 149.90,
-            priceText: '149.90 лв.',
+            priceText: '149.90 евро',
             image: 'images/promo-banner.jpg',
             description: 'Практично решение за подмяна на основни елементи от спирачната система.',
             stock: 10
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'TK-201': {
             name: 'Маслен филтър стандартен клас',
             price: 18.50,
-            priceText: '18.50 лв.',
+            priceText: '18.50 евро',
             image: 'images/oil-filter.jpg',
             description: 'Качествен филтър за надеждна работа на двигателя и ефективна филтрация на маслото.',
             stock: 10
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'TK-202': {
             name: 'Моторно масло 5W-30',
             price: 64.90,
-            priceText: '64.90 лв.',
+            priceText: '64.90 евро',
             image: 'images/engine-oil.jpg',
             description: 'Синтетично моторно масло, подходящо за ежедневна употреба и добра защита на двигателя.',
             stock: 10
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'TK-301': {
             name: 'Акумулатор 12V',
             price: 189.00,
-            priceText: '189.00 лв.',
+            priceText: '189.00 евро',
             image: 'images/battery.jpg',
             description: 'Надежден акумулатор с добри показатели за работа при различни условия.',
             stock: 10
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'TK-302': {
             name: 'Комплект чистачки',
             price: 29.90,
-            priceText: '29.90 лв.',
+            priceText: '29.90 евро',
             image: 'images/wipers.jpg',
             description: 'Практични и устойчиви чистачки за добра видимост при дъжд и лошо време.',
             stock: 10
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'TK-303': {
             name: 'Комплект автомобилни крушки',
             price: 22.90,
-            priceText: '22.90 лв.',
+            priceText: '22.90 евро',
             image: 'images/bulbs.jpg',
             description: 'Подходящ комплект крушки за по-добра видимост и безопасност по време на шофиране.',
             stock: 10
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const total = (product.price * quantity).toFixed(2);
 
         quantityPreview.textContent = quantity;
-        totalPrice.textContent = `${total} лв.`;
+        totalPrice.textContent = `${total} евро`;
     }
 
     updateTotal();
