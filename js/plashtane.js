@@ -48,6 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Практични и устойчиви чистачки за добра видимост при дъжд и лошо време.',
             stock: 10
         },
+        'TK-401': {
+            name: 'Преносим компресор за гуми 12V AirMax Compact',
+            price: 59.90,
+            priceText: '59.90 €',
+            image: 'images/tire-compressor.webp',
+            description: 'Компактен компресор с захранване от запалка 12V, подходящ за бързо напомпване на автомобилни гуми при пътуване или ежедневна употреба.',
+            stock: 10
+        },
         'TK-303': {
             name: 'Комплект автомобилни крушки',
             price: 22.90,
