@@ -139,9 +139,5 @@ document.addEventListener('DOMContentLoaded', () => {
         quantityInput.value = 1;
         updateTotal();
 
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
     });
 });
