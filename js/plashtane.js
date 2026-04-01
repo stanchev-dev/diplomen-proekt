@@ -135,6 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         successMessage.hidden = false;
+        window.scrollTo({ top: 0, behavior: 'auto' });
+
         checkoutForm.reset();
         quantityInput.value = 1;
         updateTotal();

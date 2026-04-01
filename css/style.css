@@ -1023,8 +1023,11 @@ section {
     flex-wrap: wrap;
 }
 
+.checkout-success-top {
+    margin-bottom: 20px;
+}
+
 .checkout-success-message {
-    margin-top: 20px;
     padding: 14px 16px;
     border-radius: 14px;
     background: #eaf7ee;
