@@ -87,7 +87,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const productNameInput = document.getElementById('product-name-input');
 
     const checkoutForm = document.getElementById('checkout-form');
-    const successMessage = document.getElementById('checkout-success-message');
+    const successBanner = document.getElementById('checkout-success-banner');
+    const phoneInput = document.getElementById('phone');
+    const postcodeInput = document.getElementById('postcode');
 
     function getSafeQuantity(value, maxStock) {
         if (!Number.isInteger(value) || value < 1 || value > maxStock) {
@@ -126,6 +128,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     quantityInput.addEventListener('input', updateTotal);
 
+    if (phoneInput) {
+        phoneInput.addEventListener('input', () => {
+            phoneInput.value = phoneInput.value.replace(/\D/g, '');
+        });
+    }
+
+    if (postcodeInput) {
+        postcodeInput.addEventListener('input', () => {
+            postcodeInput.value = postcodeInput.value.replace(/\D/g, '').slice(0, 4);
+        });
+    }
+
     checkoutForm.addEventListener('submit', (event) => {
         event.preventDefault();
 
@@ -134,14 +148,16 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        successMessage.hidden = false;
+        if (successBanner) {
+            successBanner.hidden = false;
+            successBanner.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
         checkoutForm.reset();
         quantityInput.value = 1;
         updateTotal();
-
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
     });
 });

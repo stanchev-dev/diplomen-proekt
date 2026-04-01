@@ -62,6 +62,16 @@ select {
     margin: 0 auto;
 }
 
+.form-success-banner {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: #eaf7ee;
+    color: #17653a;
+    border: 1px solid #b9e2c8;
+    font-weight: 700;
+}
+
 /* Достъпност */
 a:focus-visible,
 button:focus-visible {
@@ -1021,16 +1031,6 @@ section {
     justify-content: space-between;
     gap: 14px;
     flex-wrap: wrap;
-}
-
-.checkout-success-message {
-    margin-top: 20px;
-    padding: 14px 16px;
-    border-radius: 14px;
-    background: #eaf7ee;
-    color: #17653a;
-    border: 1px solid #b9e2c8;
-    font-weight: 700;
 }
 
 @media (max-width: 1200px) {
