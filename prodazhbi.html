@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Продажби | ТЕХ-КО</title>
-    <meta name="description" content="Информация за продажбите на ТЕХ-КО за определен период с графично представяне на данните.">
+    <meta name="description" content="Преглед на годишните продажби на ТЕХ-КО за 2025 година с графично представяне и кратък анализ.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -38,64 +38,33 @@
     </header>
 
     <main id="main-content">
+        <section class="sales-simple-title">
+            <div class="container sales-simple-container">
+                <h1>Преглед на годишните продажби</h1>
+            </div>
+        </section>
 
-        <section class="page-hero">
-            <div class="container">
-                <div class="page-hero-box">
-                    <h1>Продажби</h1>
+        <section class="sales-simple-chart">
+            <div class="container sales-simple-container">
+                <article class="sales-simple-card">
+                    <h2>Продажби за 2025 година</h2>
+                    <img src="images/sales-chart-2025.svg" alt="Графика с месечните продажби за 2025 година" class="sales-simple-image">
+                </article>
+            </div>
+        </section>
+
+        <section class="sales-simple-text">
+            <div class="container sales-simple-container">
+                <article class="sales-simple-card">
+                    <h2>Анализ на продажбите</h2>
                     <p>
-                        На тази страница е представена информация за продажбите на фирмата
-                        за 2025 година с графично представяне на месечните данни.
+                        Данните за 2025 година показват постепенно нарастване на продажбите от началото на годината до летните месеци,
+                        когато се отчита най-висока активност. След пиковия период през юли следва плавен спад през есента, но
+                        резултатите остават стабилни и потвърждават добра обща пазарна динамика за магазина.
                     </p>
-                </div>
+                </article>
             </div>
         </section>
-
-        <section class="sales-section">
-            <div class="container">
-                <div class="sales-layout">
-
-                    <article class="sales-info-card">
-                        <span class="section-badge">Отчетен период</span>
-                        <h2>Продажби за 2025 година</h2>
-                        <p>
-                            Графиката показва броя реализирани продажби по месеци.
-                            Данните са примерни и служат за визуално представяне
-                            на активността на фирмата през годината.
-                        </p>
-
-                        <div class="sales-stats-grid">
-                            <div class="sales-stat-box">
-                                <h3>Най-силен месец</h3>
-                                <p>Юли</p>
-                            </div>
-
-                            <div class="sales-stat-box">
-                                <h3>Най-слаб месец</h3>
-                                <p>Януари</p>
-                            </div>
-
-                            <div class="sales-stat-box">
-                                <h3>Общо продажби</h3>
-                                <p>1 830</p>
-                            </div>
-
-                            <div class="sales-stat-box">
-                                <h3>Средно на месец</h3>
-                                <p>153</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="sales-chart-card">
-                        <h2>Графично представяне</h2>
-                        <canvas id="salesChart" width="900" height="450" aria-label="Графика на продажбите за 2025 година"></canvas>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <footer class="site-footer">
@@ -111,7 +80,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/prodazhbi.js"></script>
 </body>
 </html>
