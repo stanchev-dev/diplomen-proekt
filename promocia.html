@@ -51,41 +51,96 @@
             </div>
         </section>
 
-        <section class="promo-section">
+        <section class="catalog-section promo-section">
             <div class="container">
-                <div class="promo-layout">
-
-                    <article class="promo-image-card">
-                        <div class="promo-image-frame">
-                            <img src="images/tire-compressor.webp" alt="Преносим компресор за гуми 12V" class="promo-image">
-                            <div class="promo-badge">-25%</div>
+                <div class="catalog-grid" aria-label="Промоционални продукти">
+                    <article class="product-card promo-product-card">
+                        <span class="promo-badge">-20%</span>
+                        <div class="product-image-wrap">
+                            <img src="images/tire-compressor.webp" alt="Преносим компресор за гуми 12V AirMax Compact" class="product-image">
+                        </div>
+                        <div class="product-content">
+                            <p class="product-code"><strong>№ на артикул:</strong> TK-401</p>
+                            <h3>Преносим компресор за гуми 12V AirMax Compact</h3>
+                            <p class="product-description">Компактен компресор с бързо напомпване и удобно захранване от 12V за ежедневна употреба.</p>
+                            <div class="promo-price-block">
+                                <p class="old-price">Стара цена: <span>79.90 €</span></p>
+                                <p class="new-price">Промо цена: <span>63.90 €</span></p>
+                            </div>
+                            <form action="plashtane.html" method="get" class="product-buy-form">
+                                <input type="hidden" name="code" value="TK-401">
+                                <label for="qty-TK-401" class="product-qty-label">Количество</label>
+                                <input type="number" id="qty-TK-401" name="qty" class="product-qty-input" min="1" max="10" value="1" required>
+                                <button type="submit" class="btn btn-primary">Купи</button>
+                            </form>
                         </div>
                     </article>
 
-                    <article class="promo-content-card">
-                        <span class="section-badge">Специална оферта</span>
-                        <h2>Преносим компресор за гуми 12V AirMax Compact</h2>
-
-                        <p>
-                            Компактен компресор с захранване от запалка 12V, подходящ за
-                            бързо напомпване на автомобилни гуми при пътуване или ежедневна употреба.
-                        </p>
-
-                        <div class="promo-pricing">
-                            <p class="old-price">Редовна цена: <span>79.90 €</span></p>
-                            <p class="new-price">Промо цена: <span>59.90 €</span></p>
+                    <article class="product-card promo-product-card">
+                        <span class="promo-badge">-20%</span>
+                        <div class="product-image-wrap">
+                            <img src="images/brake-pads.jpg" alt="Спирачни накладки висок клас" class="product-image">
                         </div>
-
-                        <p class="promo-small-text">
-                            Офертата е валидна до 30 април 2026 г. или до изчерпване на количествата.
-                        </p>
-
-                        <div class="promo-actions">
-                            <a href="katalog.html" class="btn btn-primary">Разгледай каталога</a>
-                            <a href="plashtane.html?code=TK-401&qty=1" class="btn btn-secondary">Купи</a>
+                        <div class="product-content">
+                            <p class="product-code"><strong>№ на артикул:</strong> TK-101</p>
+                            <h3>Спирачни накладки висок клас</h3>
+                            <p class="product-description">Устойчиви накладки с надеждна работа и стабилно поведение при градско и извънградско шофиране.</p>
+                            <div class="promo-price-block">
+                                <p class="old-price">Стара цена: <span>89.90 €</span></p>
+                                <p class="new-price">Промо цена: <span>71.90 €</span></p>
+                            </div>
+                            <form action="plashtane.html" method="get" class="product-buy-form">
+                                <input type="hidden" name="code" value="TK-101">
+                                <label for="qty-TK-101" class="product-qty-label">Количество</label>
+                                <input type="number" id="qty-TK-101" name="qty" class="product-qty-input" min="1" max="10" value="1" required>
+                                <button type="submit" class="btn btn-primary">Купи</button>
+                            </form>
                         </div>
                     </article>
 
+                    <article class="product-card promo-product-card">
+                        <span class="promo-badge">-20%</span>
+                        <div class="product-image-wrap">
+                            <img src="images/engine-oil.jpg" alt="Моторно масло 5W-30" class="product-image">
+                        </div>
+                        <div class="product-content">
+                            <p class="product-code"><strong>№ на артикул:</strong> TK-202</p>
+                            <h3>Моторно масло 5W-30</h3>
+                            <p class="product-description">Синтетично масло за отлична защита на двигателя, подходящо за ежедневни условия на шофиране.</p>
+                            <div class="promo-price-block">
+                                <p class="old-price">Стара цена: <span>64.90 €</span></p>
+                                <p class="new-price">Промо цена: <span>51.90 €</span></p>
+                            </div>
+                            <form action="plashtane.html" method="get" class="product-buy-form">
+                                <input type="hidden" name="code" value="TK-202">
+                                <label for="qty-TK-202" class="product-qty-label">Количество</label>
+                                <input type="number" id="qty-TK-202" name="qty" class="product-qty-input" min="1" max="10" value="1" required>
+                                <button type="submit" class="btn btn-primary">Купи</button>
+                            </form>
+                        </div>
+                    </article>
+
+                    <article class="product-card promo-product-card">
+                        <span class="promo-badge">-20%</span>
+                        <div class="product-image-wrap">
+                            <img src="images/wipers.jpg" alt="Комплект чистачки" class="product-image">
+                        </div>
+                        <div class="product-content">
+                            <p class="product-code"><strong>№ на артикул:</strong> TK-303</p>
+                            <h3>Комплект чистачки</h3>
+                            <p class="product-description">Издръжливи чистачки за ясна видимост при дъжд и комфортно шофиране през всички сезони.</p>
+                            <div class="promo-price-block">
+                                <p class="old-price">Стара цена: <span>29.90 €</span></p>
+                                <p class="new-price">Промо цена: <span>23.90 €</span></p>
+                            </div>
+                            <form action="plashtane.html" method="get" class="product-buy-form">
+                                <input type="hidden" name="code" value="TK-303">
+                                <label for="qty-TK-303" class="product-qty-label">Количество</label>
+                                <input type="number" id="qty-TK-303" name="qty" class="product-qty-input" min="1" max="10" value="1" required>
+                                <button type="submit" class="btn btn-primary">Купи</button>
+                            </form>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
