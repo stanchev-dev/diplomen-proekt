@@ -758,18 +758,18 @@ section {
     justify-content: center;
     border: none;
     border-radius: 50%;
-    background: var(--brand);
+    background: cyan;
     color: #ffffff;
     cursor: pointer;
     box-shadow: 0 10px 24px rgba(13, 37, 63, 0.24);
-    transition: transform var(--transition), background var(--transition), box-shadow var(--transition);
 }
 
 .scroll-to-top:hover,
-.scroll-to-top:focus-visible {
-    transform: scale(1.05);
-    background: #d43f1f;
-    box-shadow: 0 14px 30px rgba(13, 37, 63, 0.3);
+.scroll-to-top:focus-visible,
+.scroll-to-top:active {
+    background: cyan;
+    box-shadow: 0 10px 24px rgba(13, 37, 63, 0.24);
+    transform: none;
 }
 
 .scroll-to-top svg {
