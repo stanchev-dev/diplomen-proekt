@@ -758,7 +758,7 @@ section {
     justify-content: center;
     border: none;
     border-radius: 50%;
-    background: cyan;
+    background: #0f4c81;
     color: #ffffff;
     cursor: pointer;
     box-shadow: 0 10px 24px rgba(13, 37, 63, 0.24);
@@ -767,7 +767,7 @@ section {
 .scroll-to-top:hover,
 .scroll-to-top:focus-visible,
 .scroll-to-top:active {
-    background: cyan;
+    background: #0f4c81;
     box-shadow: 0 10px 24px rgba(13, 37, 63, 0.24);
     transform: none;
 }
