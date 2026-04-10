@@ -9,6 +9,7 @@ if (checkoutForm) {
             return;
         }
 
+        alert('Успешно плащане');
         window.location.href = 'katalog.html';
     });
 }
