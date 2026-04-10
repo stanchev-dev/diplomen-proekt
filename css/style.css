@@ -741,53 +741,33 @@ section {
 }
 
 
-.catalog-nav {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 20px;
-    margin-bottom: 22px;
-}
 
-.catalog-nav h2 {
-    margin: 0 0 12px;
-    font-size: 1.25rem;
-}
-
-.catalog-filter-controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.filter-btn {
+.catalog-back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
     border: 1px solid var(--border);
     background: #ffffff;
     color: var(--text);
-    padding: 10px 14px;
-    border-radius: 999px;
+    box-shadow: var(--shadow-soft);
+    font-size: 1.1rem;
     font-weight: 700;
-    cursor: pointer;
+    text-decoration: none;
+    z-index: 100;
+    transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 }
 
-.filter-btn.is-active {
-    background: var(--primary);
-    color: #ffffff;
-    border-color: var(--primary);
-}
-
-
-.catalog-top-link-wrap {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.is-hidden {
-    display: none;
-}
-
-.product-card.is-hidden {
-    display: none;
+.catalog-back-to-top:hover,
+.catalog-back-to-top:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    background: var(--surface);
 }
 
 .catalog-grid {
