@@ -742,32 +742,39 @@ section {
 
 
 
-.catalog-back-to-top {
+.scroll-container {
+    /* Фиксираната позиция държи бутона постоянно видим в долния десен ъгъл при скрол. */
     position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 40px;
-    height: 40px;
+    right: 24px;
+    bottom: 24px;
+    z-index: 100;
+}
+
+.scroll-to-top {
+    width: 56px;
+    height: 56px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    background: #ffffff;
-    color: var(--text);
-    box-shadow: var(--shadow-soft);
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-decoration: none;
-    z-index: 100;
-    transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+    border: none;
+    border-radius: 50%;
+    background: var(--brand);
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(13, 37, 63, 0.24);
+    transition: transform var(--transition), background var(--transition), box-shadow var(--transition);
 }
 
-.catalog-back-to-top:hover,
-.catalog-back-to-top:focus-visible {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow);
-    background: var(--surface);
+.scroll-to-top:hover,
+.scroll-to-top:focus-visible {
+    transform: scale(1.05);
+    background: #d43f1f;
+    box-shadow: 0 14px 30px rgba(13, 37, 63, 0.3);
+}
+
+.scroll-to-top svg {
+    width: 24px;
+    height: 24px;
 }
 
 .catalog-grid {
