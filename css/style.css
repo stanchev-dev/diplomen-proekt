@@ -926,8 +926,7 @@ section {
 }
 
 .checkout-product-code,
-.checkout-product-price,
-.checkout-product-stock {
+.checkout-product-price {
     margin: 0 0 10px;
 }
 
